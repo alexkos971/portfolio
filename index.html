@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>ALEX - portfolio</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta charset="UTF-8">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" type="text/css" href="slick.css">
+
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+
+	<script src="js\jquery-3.3.1.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
+
+	<link rel="icon" type="logo" href="image\logo.png">
+	
+</head>
+<body id="body">
+
+<!-- 	<div class="preloader" id="preloader">
+		<div class="page-preloader">
+			<div class="loader-1"></div>
+			<div class="loader-2"></div>
+			<div class="loader-3"></div>					
+		</div>	
+	</div> -->
+	
+	<header>
+		
+		<!-- <div class="page">	
+			<img src="image\mac-2.jpeg">
+		</div> -->
+
+			<div class="page-menu">
+				<h2>Menu</h2>
+				<ul>
+					<li id="menu-li-1"><a href="#top">Home</a></li>
+							
+					<li id="menu-li-2"><a href="#about-me">About me</a></li>
+							
+					<li id="menu-li-3"><a href="#works">My works</a></li>
+							
+					<li id="menu-li-4"><a href="#">Contact</a></li>
+							
+					<li id="menu-li-5"><a href="#Recomendation">Recomendation</a></li>
+				</ul>
+
+
+				<p>©My Portfolio. 2019</p>
+			</div>
+			
+		<div class="head">
+			<h1>ALEX</h1>
+				
+				<ul id="menu">
+					<li><a href="#top">Home</a></li>
+					
+					<li><a href="#about-me">About me</a></li>
+					
+					<li><a href="#works">My works</a></li>
+					
+					<li><a href="#">Contact</a></li>
+					
+					<li><a href="#Recomendation">Recomendation</a></li>
+				</ul>
+					
+
+				
+			<div class="hamburger">
+				<input type="checkbox"  id="check-menu" onclick = "check(this)"/>
+				<label for="check-menu"></label>			
+					<div  class="burger-line first"></div>
+					<div  class="burger-line second"></div>
+					<div  class="burger-line third"></div>
+					<div  class="burger-line fourth"></div>
+			</div>							
+		</div>
+
+		<div class="present">
+			<h2>Welcome to my portfolio</h2>
+			
+			<h1 class="present_words">
+				<span id="words">WEB DEVELOPER</span>
+			</h1>
+
+			
+		</div>
+			
+		<div class="arrow">
+			<div class="arrow-point">
+				<!--<h1>&#8595</h1>-->
+			</div>
+		</div>
+		
+	</header>
+
+	<content>
+		
+
+		<!-- <a name="about-me"></a> -->
+		<div class="about-me">
+			<div class="text">
+				<h2>Alex Kos</h2>
+				<h3>Web developer</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde suscipit quas quidem tempore neque, earum odit voluptatem porro. Sunt in quam assumenda, illum eius eos ut harum repellat suscipit cupiditate!</p>
+			</div>
+			
+			
+			<img src="image\self-2.png">
+			
+
+			<div class="skills">
+				<h3>My skills</h3>
+				
+				<div class="skills_row">
+					<div class="skills_row-txt">
+						<h4>HTML</h4>
+						<h6>90%</h6>
+					</div>
+
+					<div class="progress">	
+						<div class="percent-html"></div>
+					</div>
+				</div>
+				
+				<div class="skills_row">
+					<div class="skills_row-txt">
+						<h4>CSS</h4>
+						<h6>82%</h6>
+					</div>
+
+					<div class="progress">
+						<div class="percent-css"></div>
+					</div>	
+				</div>
+				
+
+				<div class="skills_row">
+					<div class="skills_row-txt">
+						<h4>Java Script</h4>
+						<h6>18%</h6>
+					</div>
+					
+					<div class="progress">
+						<div class="percent-js"></div>
+					</div>
+				</div>
+				
+				
+				<div class="skills_row">
+					<div class="skills_row-txt">
+						<h4>jQuery</h4>
+						<h6>5%</h6>
+					</div>
+				
+					<div class="progress">
+						<div class="percent-jQ"></div>
+					</div>
+				</div>
+				
+
+				<div class="skills_row">
+					<div class="skills_row-txt">
+						<h4>Git & GitHub</h4>
+						<h6>32%</h6>
+					</div>
+					
+					<div class="progress">
+						<div class="percent-git"></div>
+					</div>
+				</div>		
+			</div>
+		</div>
+
+		<!-- <a name="Recomendation"></a> -->
+		<nav class="slider_items">
+
+			<div class="rec">
+				<hr id="hr-1">
+				<h1>Recomendation</h1>
+				<hr id="hr-2">
+			</div>
+
+			<div class="slider" id="slider">
+				
+				<div class="slide">
+					<img src="image\gear.png">
+					<h2>WEB DEVELOPMENT</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod deleniti, optio autem, ducimus minima recusandae corporis sunt natus.</p>
+				</div>
+
+				<div class="slide">
+					<img src="image\eye.png">
+					<h2>MUSICIAN</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod deleniti, optio autem, ducimus minima recusandae corporis sunt natus.</p>
+				</div>
+
+				<div class="slide">
+					<img src="image\design.png">
+					<h2>DESIGNING</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod deleniti, optio autem, ducimus minima recusandae corporis sunt natus.</p>
+				</div>
+
+				<div class="slide">
+					<img src="image\design.png">
+					<h2>DESIGNING</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod deleniti, optio autem, ducimus minima recusandae corporis sunt natus.</p>
+				</div>
+
+				<div class="slide">
+					<img src="image\design.png">
+					<h2>DESIGNING</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod deleniti, optio autem, ducimus minima recusandae corporis sunt natus.</p>
+				</div>
+
+				<div class="slide">
+					<img src="image\design.png">
+					<h2>DESIGNING</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod deleniti, optio autem, ducimus minima recusandae corporis sunt natus.</p>
+				</div>
+			</div>
+		</nav>
+
+
+		<div class="counter">	
+			<div class="count">
+				<div class="counter-wrap">
+					<h2 class="counter-nums" data-target="2549" >0</h2>
+					<img src="image\code.png">
+				</div>
+
+				<div class="counter-wrap">
+					<h2 class="counter-nums" data-target="5" >0</h2>
+					<img src="image\positive.png">
+				</div>
+
+				<div class="counter-wrap">
+					<h2 class="counter-nums" data-target="64" >0</h2>
+					<img src="image\clock.png">
+				</div>
+
+				<div class="counter-wrap">
+					<h2 class="counter-nums" data-target="2" >0</h2>
+					<img src="image\completed.png">
+				</div>
+			
+			</div>
+		</div>
+
+
+		<a name="works"></a>
+		<div class="works">
+			<hr id="hr-1">
+			<h2>My works</h2>
+			<hr id="hr-2">
+				
+				<div class="container-vit">
+							<div class="vit">
+								<img src="image\photoaparat.jpg">
+								<div class="ploy">
+									<h1>Lorem ipsum</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum inventore, ipsa vero perferendis itaque fugiat dolorem natus incidunt quasi quaerat.</p>
+								</div>
+							</div>
+
+							<div class="vit-2">
+								<img src="image\orange.jpg">
+								<div class="ploy-2">
+									<h1>Lorem ipsum</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum inventore, ipsa vero perferendis itaque fugiat dolorem natus incidunt quasi quaerat.</p>
+								</div>
+							</div>
+
+							<div class="vit-3">
+								<img src="image\glasses.jpg">
+								<div class="ploy-3">
+									<h1>Lorem ipsum</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum inventore, ipsa vero perferendis itaque fugiat dolorem natus incidunt quasi quaerat.</p>
+								</div>		
+						</div>
+				</div>
+				
+
+				<div class="container-vit-2">
+						<div class="vit-4">
+								<img src="image\camera.jpg">
+								<div class="ploy-4">
+									<h1>Lorem ipsum</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum inventore, ipsa vero perferendis itaque fugiat dolorem natus incidunt quasi quaerat.</p>
+								</div>
+							</div>
+
+							<div class="vit-5">
+								<img src="image\guitar.jpg">
+								<div class="ploy-5">
+									<h1>Lorem ipsum</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum inventore, ipsa vero perferendis itaque fugiat dolorem natus incidunt quasi quaerat.</p>
+								</div>
+							</div>
+
+							<div class="vit-6">
+								<img src="image\lamp.jpg">
+								<div class="ploy-6">
+									<h1>Lorem ipsum</h1>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum inventore, ipsa vero perferendis itaque fugiat dolorem natus incidunt quasi quaerat.</p>
+								</div>		
+						</div>
+					</div>		
+
+		</content>
+
+	
+
+		<footer>
+			<div class="copyright">
+				<h3>©All rights reserved. Portfolio by <span>Alex Kos</span></h3>
+			</div>	
+		</footer>
+
+	<script src="js/script.js" defer></script>
+	<script src="js/slick.min.js"></script>
+</body>
+</html>

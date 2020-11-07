@@ -1,0 +1,461 @@
+@media screen and (max-width: 960px) {
+
+
+	html {
+		max-width: 100%;
+		height: auto;
+		overflow-x: hidden;
+	}
+
+	.preloader {
+		width: 100%;
+		height: 100%;
+	}
+
+	header {
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.head {
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+
+	.head-r {
+		width: 100%;
+		height: 50px;
+		background-color: #fff;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	.main-menu {
+		width: 100%;
+		height: 520px;
+		position: fixed;
+		top: 45px;
+		text-align: center;
+		background-color: #000;
+		display: block;
+		overflow: hidden;
+		transition: 1s all ease;
+		z-index: 1;
+	}
+
+	.hamburger {
+		display: block;
+		z-index: 10;
+	}
+
+	.main-menu li {
+		width: 80%;
+		height: 75px;
+		list-style: none;
+		font-size: 21px;
+		font-family: sans-serif;
+		font-weight: normal;
+		position: relative;
+		top: 40px;
+		left: 3%;
+		margin-bottom: -20px; 
+		text-align: left;
+		transition: .2s all;
+	}
+
+	.main-menu li:hover {
+		left: 10%;
+	}
+
+	.main-menu h2 {
+		color: #a0a0a0;
+		font-family: Helvetica, sans-serif;
+		font-weight: normal;
+		font-size: 25px;
+		position: relative;
+		top: 20px;
+	}
+
+	.main-menu a {
+		text-decoration: none;
+		color: #fff;
+		letter-spacing: 1px;
+		/*border-bottom-color: 2px  #fff;*/
+	}
+
+	.main-menu a:hover {
+		color: #61e890;
+	}
+
+	.main-menu small {
+		color: #515151;
+		font-family: sans-serif;
+		position: relative;
+		top: 100px;
+	}
+
+	.page img {
+		width: 960px;
+		height: 570px;
+		position: relative;
+		left: -300px; 
+		overflow: hidden;
+	}
+
+	
+
+	#menu {
+		display: none;
+	}
+
+	.main-menu {
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		top: 45px;
+		text-align: center;
+		background-color: #000;
+		display: block;
+		overflow: hidden;
+		transition: 1s all ease;
+		z-index: 1;
+	}
+
+	.main-menu li {
+		width: 80%;
+		height: 75px;
+		list-style: none;
+		font-size: 21px;
+		font-family: sans-serif;
+		font-weight: normal;
+		position: relative;
+		top: 40px;
+		left: 3%;
+		margin-bottom: -20px; 
+		text-align: left;
+		transition: .2s all;
+	}
+
+	.main-menu li:hover {
+		left: 10%;
+	}
+
+	.main-menu h2 {
+		color: #a0a0a0;
+		font-family: Helvetica, sans-serif;
+		font-weight: normal;
+		font-size: 25px;
+		position: relative;
+		top: 20px;
+	}
+
+	.main-menu a {
+		text-decoration: none;
+		color: #fff;
+		letter-spacing: 1px;
+		/*border-bottom-color: 2px  #fff;*/
+	}
+
+	.main-menu a:hover {
+		color: #61e890;
+	}
+
+	.main-menu p {
+		color: #515151;
+		font-family: sans-serif;
+		position: absolute;
+    	bottom: 10%;
+    	left: 50%;
+    	transform: translateX(-50%);
+	}
+
+
+
+	.head h1 {
+		font-size: 28px;
+		left: 20px;
+		height: 100%;
+		color: #fff;
+	}
+
+	.head-r h1 {
+		color: #000;
+		font-size: 28px;
+		left: 20px;
+		height: 70%;
+		margin-top: 20px;
+	}
+
+	.hamburger {
+		display: block;
+		z-index: 10;
+	}
+
+/*	.avatar {
+		width: 70px;
+		height: 70px;
+	}
+
+	.avatar img {
+		width: 90px;
+		height: 70px;
+		right: 15px;
+	}
+*/
+	.present h2 {
+		font-size: 22px;
+	}
+
+	#words {
+		position: relative;
+		top: -35px;
+		font-size: 30px;
+		white-space: nowrap;
+	}
+
+	.typed-cursor {
+		font-size: 30px;
+		top: -35px;
+	}
+
+	content {
+		max-width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.about-me {
+		width: 100%;
+		height: auto;
+		display: block;
+		position: relative;
+	}
+
+	.text {
+		width: 100%;
+		position: relative;
+		top: 30px;
+		left: 0;
+	}
+
+	.text h2 {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.text h3 {
+		position: relative;
+		top: -18px;
+	}
+
+	.text p {
+		position: relative;
+		top: -20px;
+		font-size: 20px;
+		left: 10px;
+		line-height: 22px;
+	}
+
+	.about-me img {
+		width: 60%;
+		height: auto;
+		margin: 0 auto;
+		left: 20%;
+		top: 10px;
+	}
+
+	.skills {
+		width: 100%;
+		top: 10px;
+		right: 0;
+	}
+
+	.skills h3 {
+		top: 20px;
+	}
+
+	.skills h4 {
+		left: 20px;
+		top: 5px;
+		font-size: 13px;
+	}
+
+	.skills_row-txt {
+		width: 90%;
+		left: 5%;
+	}
+
+	.progress {
+		width: 90%;
+		left: 5%;
+	}
+
+
+	.slider_items {
+		width: 100%;
+		height: auto;
+		display: block;
+		position: relative;
+		overflow: hidden;
+	}
+
+	nav h1 {
+		font-size: 29px;
+	}
+
+	#hr-1, #hr-2 {
+		width: 30%;
+	}
+
+	#slider {
+		width: 300%;
+		/*top: 60px;*/
+		display: flex;
+		position: relative;
+		left: 0;
+		transition: all ease 1s;
+		overflow-x: hidden;
+	}
+
+	.slide {
+		width: 100%;
+		margin-bottom: 70px;
+		overflow-x: hidden;
+	}
+
+	.slide h2 {
+		top: -5px;
+		font-size: 20px;
+	}
+
+	.slide p {
+		width: 90%;
+		text-align: center;
+		top: 0;
+		left: 5%; 
+	}
+
+	.button {
+		width: 33.3%;
+		display: inline;
+		justify-content: center;
+		align-self: center;
+		align-items: center;
+		text-align: center;
+		align-content: center;
+		margin: 0 auto;
+		position: relative;
+		top: -10px;
+		left: 47%;
+	}
+
+	.dot {
+		margin: 0 auto;
+	}
+
+	.counter {
+		padding: 0;
+	}
+
+	.count {
+		display: grid;
+		padding: 25px;
+		grid-template-columns: 50% 50%;
+	}
+	.counter-wrap {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		padding: 20px 20px;
+		margin: 0;
+		align-items: center;
+	}
+
+	.counter-nums {
+		font-size: 30px;
+		margin: 0px;
+		margin-bottom: 10px;
+	}
+
+	.count img {
+		width: 30px;
+		height: 30px;
+	}
+
+	.container-vit, .container-vit-2 {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	.vit, .vit-3, .vit-4, .vit-6 {
+		width: 90%;
+		height: 270px;
+		margin-left: 5%;
+		margin-bottom: 5%;
+	}
+
+	.vit-2, .vit-5 {
+		width: 90%;
+		height: 270px;
+		margin-left: 5%;
+		margin-bottom: 5%;
+	}
+
+	.ploy, .ploy-2, .ploy-3, .ploy-4, .ploy-5, .ploy-6  {
+		top: -112%;
+		width: 90%;
+		right: -5%;
+	}
+
+	.vit img {
+		left: -40px; 
+	}
+		.vit-2 img {
+			left: -60px; 
+		}
+			.vit-5 img {
+				left: -30px; 
+			}
+				.vit-6 img {
+					left: -55px; 
+				}
+
+
+	.vit:hover  img {
+		left: -0px;
+	}
+		.vit-2:hover  img {
+			left: -10px;
+		}
+			.vit-5:hover  img {
+				left: 0px;
+			}
+				.vit-6:hover  img {
+					left: 0px;
+				}
+	
+	
+	.container-vit h1, .container-vit-2 h1 {
+		font-size: 24px;
+	}
+
+
+	.container-vit p, .container-vit-2 p {
+		font-size: 15px;
+		top: 5px;
+	}
+
+	footer h3 {
+		font-size: 12px;
+		word-spacing: 1px;
+	}
+
+	footer span {
+		font-size: 18px;
+	}
+
+}
