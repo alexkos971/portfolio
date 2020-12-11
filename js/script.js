@@ -10,6 +10,17 @@ jQuery(document).ready(function() {
 
 jQuery(document).ready(function() {
 
+
+  let percentValues = []
+  let percentTxt = document.querySelectorAll('.skills_row-txt > h6');
+
+  for (value of percentTxt) {
+    percentValues.push(value.dataset.target + "%");
+  }
+
+  let percentLine = document.querySelectorAll('.progress-percent');
+  let percentFlag = true;
+
 $('#check-menu').on('click', function() {
   $('.page-menu').toggleClass('main-menu');
   $('.main-menu').slideRight(1000);
@@ -32,12 +43,13 @@ $(window).on("scroll", function () {
       "opacity" : "1"}, 450);
   }
 
-  if ($(this).scrollTop() >= 420) { 
-    $(".percent-html").animate({"width" :  "90%"}, 1000);
-    $(".percent-css").animate({"width" :  "82%"}, 1000);
-    $(".percent-js").animate({"width" :  "18%"}, 1000);
-    $(".percent-jQ").animate({"width" :  "5%"}, 1000);
-    $(".percent-git").animate({"width" :  "32%"}, 1000);
+  if ($(this).scrollTop() >= 420 && percentFlag) { 
+    percentFlag = false;
+
+    percentValues.map((item, index) => {
+      percentTxt[index].innerHTML = item;
+      $(percentLine[index]).animate({"width": item}, 700)
+    })
   }
 
   if ($(this).scrollTop() >= 900) {
@@ -85,6 +97,7 @@ window.addEventListener('scroll', function() {
   if (this.pageYOffset > countWrap.getBoundingClientRect().top + 1200 && !count_trigger) {
     count_trigger = true;
 
+    // array of values of counterWrap
     let cnt = [];
     counter.forEach((item, index) => cnt.push(Math.round(item.dataset.target / 4)));
 
@@ -92,6 +105,7 @@ window.addEventListener('scroll', function() {
 
     function countLoop() {  
       counter.forEach((item, index) => {
+        
         setTimeout(() => {
           if (parseInt(item.textContent) !== parseInt(item.dataset.target)) {
             checkCounter(item, cnt[index]);
