@@ -536,8 +536,8 @@ content {
 
 .about-me img {
 	position: relative;
-	top: 120px;
-	width: 200px;
+	top: 105px;
+	width: auto;
 	height: 350px;
 	-webkit-filter: brightness(.9);
 }
