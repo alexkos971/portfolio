@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
   var typed = new Typed("#words", {
-    strings: ["Web Developer", "Designer", "Musician", "Balisong"],
+    strings: ["Web Developer", "Designer", "Front - End", "JS", "ReactJS"],
     typeSpeed: 100,
     backSpeed: 40,
     loop: true
@@ -10,22 +10,22 @@ jQuery(document).ready(function() {
 
 jQuery(document).ready(function() {
 
-
   let percentValues = []
-  let percentTxt = document.querySelectorAll('.skills_row-txt > h6');
+  let percentTxt = document.querySelectorAll('.about-skills_wrap-txt > h6');
 
   for (value of percentTxt) {
     percentValues.push(value.dataset.target + "%");
   }
 
-  let percentLine = document.querySelectorAll('.progress-percent');
+  let percentLine = document.querySelectorAll('.about-skills_progress-percent');
   let percentFlag = true;
 
 $('#check-menu').on('click', function() {
-  $('.page-menu').toggleClass('main-menu');
+  $('.head-menu').toggleClass('head-menu-active');
   $('.main-menu').slideRight(1000);
     //$('.head').css("background-color", "#000")
 });
+
     
 
 $(window).on("scroll", function () {
@@ -37,9 +37,10 @@ $(window).on("scroll", function () {
     $(".head").removeClass("head-r");
     $(".head-r").addClass("head");
   }
-        
-  if ($(this).scrollTop() >= 220) {
-    $(".about-me").animate({"left" : "0%", 
+     
+  // About 
+  if ($(this).scrollTop() >= 250) {
+    $(".about").animate({"bottom" : "0px", 
       "opacity" : "1"}, 450);
   }
 
@@ -84,9 +85,26 @@ $(window).on("scroll", function () {
 //preloader
 setTimeout(function() {
   document.getElementById("preloader").style.display = "none";
+  document.body.style.overflowY = 'scroll';
 }, 2500);  
 
 
+// Card
+const card = document.querySelector('.about-wrap');
+card.addEventListener('mousemove', startRotate);
+card.addEventListener('mouseout', stopRotate);
+
+function startRotate(e) {
+  const half = card.offsetHeight / 2;
+  card.style.transform = 'rotateX(' + - (e.offsetY - half) / 8 + 'deg) rotateY(' + (e.offsetX - half)/8 + 'deg';
+}
+
+function stopRotate (e) {
+  card.style.transform = 'rotate(0';
+}
+
+
+// Counter
 let countWrap = document.querySelector('.counter');
 let counter = document.querySelectorAll('.counter-wrap > h2');
 let count_trigger = false;
@@ -94,7 +112,7 @@ let count_trigger = false;
 
 
 window.addEventListener('scroll', function() {
-  if (this.pageYOffset > countWrap.getBoundingClientRect().top + 1200 && !count_trigger) {
+  if (this.pageYOffset > countWrap.getBoundingClientRect().top + 100 && !count_trigger) {
     count_trigger = true;
 
     // array of values of counterWrap
@@ -113,7 +131,7 @@ window.addEventListener('scroll', function() {
             countLoop();
           }
           return false;
-        }, parseInt(item.dataset.target / (item.dataset.target * item.dataset.target / 1000)));
+        }, parseInt(item.dataset.target / (item.dataset.target * 0.1)));
       })
     }
   }

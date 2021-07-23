@@ -8,60 +8,42 @@
 
 	<meta charset="UTF-8">
 	
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./css/preloader.css" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/head.css" />
+	<link rel="stylesheet" type="text/css" href="./css/slick.css">
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
 
-	<link rel="stylesheet" type="text/css" href="slick.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Poiret+One&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="normalize.css">
-
-	<script src="js\jquery-3.3.1.min.js"></script>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
+	<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 
 	<link rel="icon" type="logo" href="image\logo.png">
-	
 </head>
+
 <body id="body">
 
-<!-- 	<div class="preloader" id="preloader">
-		<div class="page-preloader">
-			<div class="loader-1"></div>
-			<div class="loader-2"></div>
-			<div class="loader-3"></div>					
-		</div>	
+	<!-- <div class="preloader" id="preloader">
+		<div class="loader">
+			<span class="loader first"></span>
+			<span class="loader second"></span>
+			<span class="loader thirth"></span>
+			<span class="loader fourth"></span>
+		</div>
 	</div> -->
 	
-	<header>
-		
-		<!-- <div class="page">	
-			<img src="image\mac-2.jpeg">
-		</div> -->
-
-			<div class="page-menu">
-				<h2>Menu</h2>
-				<ul>
-					<li id="menu-li-1"><a href="#top">Home</a></li>
-							
-					<li id="menu-li-2"><a href="#about-me">About me</a></li>
-							
-					<li id="menu-li-3"><a href="#works">My works</a></li>
-							
-					<li id="menu-li-4"><a href="#">Contact</a></li>
-							
-					<li id="menu-li-5"><a href="#Recomendation">Recomendation</a></li>
-				</ul>
-
-
-				<p>©My Portfolio. 2019</p>
-			</div>
+	<header data-parallax="scroll" data-image-src="./image/mac-3.png">
+		<!-- <div class="parallax-window"> -->
 			
-		<div class="head">
+		<div class="head" id="home">
 			<h1>ALEX</h1>
 				
-				<ul id="menu">
-					<li><a href="#top">Home</a></li>
+				<ul class="head-menu">
+					<li><a href="#home">Home</a></li>
 					
-					<li><a href="#about-me">About me</a></li>
+					<li><a href="#about">About me</a></li>
 					
 					<li><a href="#works">My works</a></li>
 					
@@ -73,7 +55,7 @@
 
 				
 			<div class="hamburger">
-				<input type="checkbox"  id="check-menu" onclick = "check(this)"/>
+				<input type="checkbox" id="check-menu" onclick="menu()"/>
 				<label for="check-menu"></label>			
 					<div class="burger-line first"></div>
 					<div class="burger-line second"></div>
@@ -97,89 +79,96 @@
 				<!--<h1>&#8595</h1>-->
 			</div>
 		</div>
-		
 	</header>
 
 	<content>
 		
-
-		<!-- <a name="about-me"></a> -->
-		<div class="about-me">
-			<div class="text">
+		<div class="about">
+			<div class="about-description">
 				<h2>Alex Kos</h2>
 				<h3>Web developer</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde suscipit quas quidem tempore neque, earum odit voluptatem porro. Sunt in quam assumenda, illum eius eos ut harum repellat suscipit cupiditate!</p>
+				<p>Привет, меня зовут Александр, и я js фронтенд разработчик. Привет, меня зовут Александр, и я js фронтенд разработчик.Привет, меня зовут Александр, и я js фронтенд разработчик.Привет, меня зовут Александр, и я js фронтенд разработчик.Привет, меня зовут Александр, и я js фронтенд разработчик.Привет, меня зовут Александр, и я js фронтенд разработчик.Привет, меня зовут Александр, и я js фронтенд разработчик.</p>
 			</div>
 			
-			
-			<img src="image\avatar_2.jpg">
+			<div class="about-wrap">
+				<img src="image\me.jpg">
+			</div>
 			
 
-			<div class="skills">
+			<div class="about-skills">
 				<h3>My skills</h3>
 				
-				<div class="skills_row">
-					<div class="skills_row-txt">
+				<div class="about-skills_wrap">
+					<div class="about-skills_wrap-txt">
 						<h4>ReactJS</h4>
 						<h6 data-target="90">0%</h6>
 					</div>
 
-					<div class="progress">	
-						<div class="progress-percent"></div>
+					<div class="about-skills_progress">	
+						<div class="about-skills_progress-percent"></div>
 					</div>
-				</div>
-				
-				<div class="skills_row">
-					<div class="skills_row-txt">
+				</div>	
+
+				<div class="about-skills_wrap">
+					<div class="about-skills_wrap-txt">
 						<h4>NodeJS</h4>
-						<h6 data-target="47">0%</h6>
+						<h6 data-target="30">0%</h6>
 					</div>
 
-					<div class="progress">
-						<div class="progress-percent"></div>
-					</div>	
-				</div>
-				
+					<div class="about-skills_progress">	
+						<div class="about-skills_progress-percent"></div>
+					</div>
+				</div>	
 
-				<div class="skills_row">
-					<div class="skills_row-txt">
-						<h4>MongoDB</h4>
-						<h6 data-target="18">0%</h6>
+				<div class="about-skills_wrap">
+					<div class="about-skills_wrap-txt">
+						<h4>MongoDb</h4>
+						<h6 data-target="42">0%</h6>
 					</div>
-					
-					<div class="progress">
-						<div class="progress-percent"></div>
-					</div>
-				</div>
-				
-				
-				<div class="skills_row">
-					<div class="skills_row-txt">
-						<h4>PHP</h4>
-						<h6 data-target="15">0%</h6>
-					</div>
-				
-					<div class="progress">
-						<div class="progress-percent"></div>
-					</div>
-				</div>
-				
 
-				<div class="skills_row">
-					<div class="skills_row-txt">
+					<div class="about-skills_progress">	
+						<div class="about-skills_progress-percent"></div>
+					</div>
+				</div>	
+
+				<div class="about-skills_wrap">
+					<div class="about-skills_wrap-txt">
+						<h4>React Native</h4>
+						<h6 data-target="64">0%</h6>
+					</div>
+
+					<div class="about-skills_progress">	
+						<div class="about-skills_progress-percent"></div>
+					</div>
+				</div>
+
+				<div class="about-skills_wrap">
+					<div class="about-skills_wrap-txt">
+						<h4>SCSS</h4>
+						<h6 data-target="70">0%</h6>
+					</div>
+
+					<div class="about-skills_progress">	
+						<div class="about-skills_progress-percent"></div>
+					</div>
+				</div>
+
+				<div class="about-skills_wrap">
+					<div class="about-skills_wrap-txt">
 						<h4>Git & GitHub</h4>
-						<h6 data-target="32">0%</h6>
+						<h6 data-target="90">0%</h6>
 					</div>
-					
-					<div class="progress">
-						<div class="progress-percent"></div>
+
+					<div class="about-skills_progress">	
+						<div class="about-skills_progress-percent"></div>
 					</div>
-				</div>		
+				</div>
+				
 			</div>
 		</div>
 
 		<!-- <a name="Recomendation"></a> -->
-		<nav class="slider_items">
+	<!-- 	<nav class="slider_items">
 
 			<div class="rec">
 				<hr id="hr-1">
@@ -225,40 +214,43 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod deleniti, optio autem, ducimus minima recusandae corporis sunt natus.</p>
 				</div>
 			</div>
-		</nav>
+		</nav> -->
 
 
 		<div class="counter">	
 			<div class="count">
 				<div class="counter-wrap">
-					<h2 class="counter-nums" data-target="2549" >0</h2>
-					<img src="image\code.png">
+					<h2 class="counter-nums" data-target="88549">0</h2>
+					<i class="fas fa-code"></i>
 				</div>
 
 				<div class="counter-wrap">
-					<h2 class="counter-nums" data-target="5" >0</h2>
-					<img src="image\positive.png">
+					<h2 class="counter-nums" data-target="5">0</h2>
+					<i class="fas fa-users"></i>
 				</div>
 
 				<div class="counter-wrap">
-					<h2 class="counter-nums" data-target="64" >0</h2>
-					<img src="image\clock.png">
+					<h2 class="counter-nums" data-target="5023">0</h2>
+					<i class="far fa-clock"></i>
 				</div>
 
 				<div class="counter-wrap">
-					<h2 class="counter-nums" data-target="2" >0</h2>
-					<img src="image\completed.png">
+					<h2 class="counter-nums" data-target="6" >0</h2>
+					<i class="fas fa-list"></i>
 				</div>
 			
 			</div>
 		</div>
 
 
-		<a name="works"></a>
+		<a id="works"></a>
 		<div class="works">
-			<hr id="hr-1">
-			<h2>My works</h2>
-			<hr id="hr-2">
+
+			<div class="title">
+				<p class="title-line"></p>
+				<h2>My works</h2>
+				<p class="title-line"></p>
+			</div>
 				
 				<div class="container-vit">
 							<div class="vit">
@@ -323,7 +315,14 @@
 			</div>	
 		</footer>
 
+	<script src="js\jquery-3.3.1.min.js"></script>
+	<script src="./js/parallax.min.js"></script>
 	<script src="js/script.js" defer></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+
 	<script src="js/slick.min.js"></script>
+
+	<!-- Typed text -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
 </body>
 </html>
