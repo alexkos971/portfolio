@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
   var typed = new Typed("#words", {
-    strings: ["Web Developer", "Designer", "Front - End", "JS", "ReactJS"],
+    strings: ["", "Web Developer", "Designer", "Front - End", "JS", "ReactJS"],
     typeSpeed: 100,
     backSpeed: 40,
     loop: true
@@ -26,7 +26,12 @@ $('#check-menu').on('click', function() {
     //$('.head').css("background-color", "#000")
 });
 
-    
+$("#toHome").on('click', function() {
+  $(".head").removeClass("head-r");
+  $(".head-r").addClass("head");
+
+})
+
 
 $(window).on("scroll", function () {
   if ($(this).scrollTop() >= 100) {
@@ -93,6 +98,7 @@ setTimeout(function() {
 const card = document.querySelector('.about-wrap');
 card.addEventListener('mousemove', startRotate);
 card.addEventListener('mouseout', stopRotate);
+// const img = document.querySelector(card)
 
 function startRotate(e) {
   const half = card.offsetHeight / 2;

@@ -76,6 +76,7 @@
 		left: 10%;
 	}
 
+
 	.head-menu-active h2 {
 		color: #a0a0a0;
 		font-family: Helvetica, sans-serif;
@@ -261,6 +262,9 @@
 		font-size: 13px;
 	}
 
+	.title {
+		width: 90%;
+	}
 
 	.slider_items {
 		width: 100%;
@@ -353,69 +357,32 @@
 		height: 30px;
 	}
 
-	.container-vit, .container-vit-2 {
-		width: 100%;
+	.works-container {
+		width: 95%;
 		height: auto;
 		display: block;
 	}
 
-	.vit, .vit-3, .vit-4, .vit-6 {
-		width: 90%;
+	.works-container-item {
+		width: 100%;
 		height: 270px;
-		margin-left: 5%;
+		/*margin-left: 5%;*/
 		margin-bottom: 5%;
+		margin-left: 0;
 	}
 
-	.vit-2, .vit-5 {
-		width: 90%;
-		height: 270px;
-		margin-left: 5%;
-		margin-bottom: 5%;
-	}
-
-	.ploy, .ploy-2, .ploy-3, .ploy-4, .ploy-5, .ploy-6  {
-		top: -112%;
-		width: 90%;
-		right: -5%;
-	}
-
-	.vit img {
-		left: -40px; 
-	}
-		.vit-2 img {
-			left: -60px; 
-		}
-			.vit-5 img {
-				left: -30px; 
-			}
-				.vit-6 img {
-					left: -55px; 
-				}
-
-
-	.vit:hover  img {
-		left: -0px;
-	}
-		.vit-2:hover  img {
-			left: -10px;
-		}
-			.vit-5:hover  img {
-				left: 0px;
-			}
-				.vit-6:hover  img {
-					left: 0px;
-				}
-	
-	
-	.container-vit h1, .container-vit-2 h1 {
-		font-size: 24px;
+	.works-container-item img {
+		width: 110%;
+    	height: auto;
+    	position: relative;
+    	top: 0%;
+    	left: -17px;
+    	margin: 0 auto;
+    	margin-bottom: 20px;
+    	transition: .3s all;
 	}
 
 
-	.container-vit p, .container-vit-2 p {
-		font-size: 15px;
-		top: 5px;
-	}
 
 	footer h3 {
 		font-size: 12px;

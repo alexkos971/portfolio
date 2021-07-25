@@ -24,15 +24,15 @@
 </head>
 
 <body id="body">
-
-	<!-- <div class="preloader" id="preloader">
+	<a id="home"></a>
+	<div class="preloader" id="preloader">
 		<div class="loader">
 			<span class="loader first"></span>
 			<span class="loader second"></span>
 			<span class="loader thirth"></span>
 			<span class="loader fourth"></span>
 		</div>
-	</div> -->
+	</div>
 	
 	<header data-parallax="scroll" data-image-src="./image/mac-3.png">
 		<!-- <div class="parallax-window"> -->
@@ -41,15 +41,13 @@
 			<h1>ALEX</h1>
 				
 				<ul class="head-menu">
-					<li><a href="#home">Home</a></li>
+					<li id="toHome"><a href="#home">Home</a></li>
 					
 					<li><a href="#about">About me</a></li>
 					
 					<li><a href="#works">My works</a></li>
 					
-					<li><a href="#">Contact</a></li>
-					
-					<li><a href="#Recomendation">Recomendation</a></li>
+					<li><a href="#contacts">Contacts</a></li>	
 				</ul>
 					
 
@@ -82,16 +80,16 @@
 	</header>
 
 	<content>
-		
+		<a id="about"></a>
 		<div class="about">
 			<div class="about-description">
 				<h2>Alex Kos</h2>
 				<h3>Web developer</h3>
-				<p>Привет, меня зовут Александр, и я js фронтенд разработчик. Привет, меня зовут Александр, и я js фронтенд разработчик.Привет, меня зовут Александр, и я js фронтенд разработчик.Привет, меня зовут Александр, и я js фронтенд разработчик.Привет, меня зовут Александр, и я js фронтенд разработчик.Привет, меня зовут Александр, и я js фронтенд разработчик.Привет, меня зовут Александр, и я js фронтенд разработчик.</p>
+				<p>Привет, меня зовут Александр, и я js фронтенд разработчик. Занимаюсь программированием около 3 лет. Для построения приложения я использую фреймворк React в связке с Redux и Next js, css препроцессоры (SCSS, Sass). Также, есть знания Node js, фреймворка express, авторизация и регистрация, работа с файлами, создание REST API приложений. Работал такими базами данных, как MySQL и MongoDB. Есть опыт в разработке мобильных приложений на React Native.</p>
 			</div>
 			
 			<div class="about-wrap">
-				<img src="image\me.jpg">
+				<img src="./image/me.jpg">
 			</div>
 			
 
@@ -112,7 +110,7 @@
 				<div class="about-skills_wrap">
 					<div class="about-skills_wrap-txt">
 						<h4>NodeJS</h4>
-						<h6 data-target="30">0%</h6>
+						<h6 data-target="48">0%</h6>
 					</div>
 
 					<div class="about-skills_progress">	
@@ -123,7 +121,7 @@
 				<div class="about-skills_wrap">
 					<div class="about-skills_wrap-txt">
 						<h4>MongoDb</h4>
-						<h6 data-target="42">0%</h6>
+						<h6 data-target="38">0%</h6>
 					</div>
 
 					<div class="about-skills_progress">	
@@ -252,67 +250,90 @@
 				<p class="title-line"></p>
 			</div>
 				
-				<div class="container-vit">
-							<div class="vit">
-								<img src="image\photoaparat.jpg">
-								<div class="ploy">
-									<h1>Lorem ipsum</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum inventore, ipsa vero perferendis itaque fugiat dolorem natus incidunt quasi quaerat.</p>
-								</div>
-							</div>
-
-							<div class="vit-2">
-								<img src="image\orange.jpg">
-								<div class="ploy-2">
-									<h1>Lorem ipsum</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum inventore, ipsa vero perferendis itaque fugiat dolorem natus incidunt quasi quaerat.</p>
-								</div>
-							</div>
-
-							<div class="vit-3">
-								<img src="image\glasses.jpg">
-								<div class="ploy-3">
-									<h1>Lorem ipsum</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum inventore, ipsa vero perferendis itaque fugiat dolorem natus incidunt quasi quaerat.</p>
-								</div>		
+				<div class="works-container">
+					<div class="works-container-item">
+						<img src="image\maze-music-screen.png">
+						<div class="works-container-item-text">
+							<h1>Maze music</h1>
+							<p>Music app, like a spotify on MERN stack (mongo, express, react, node)</p>
+							<a href="https://github.com/alexkos971/maze-music-client">View</a>
 						</div>
+					</div>
+
+					<div class="works-container-item">
+						<img src="image\calendar.png">
+						<div class="works-container-item-text">
+							<h1>Calendar</h1>
+							<p>Calendar app with weather (OpenWeather Api) on React, Redux and Next</p>
+							<a href="https://github.com/alexkos971/calendar">View</a>
+						</div>
+					</div>
+
+					<div class="works-container-item">
+						<img src="image\webion.png">
+						<div class="works-container-item-text">
+							<h1>Webion box</h1>
+							<p>Webion box - pack of famous mini-games.</p>
+							<a href="https://github.com/alexkos971/webion-box">View</a>
+						</div>		
+					</div>
 				</div>
-				
+			
+			<a id="contacts"></a>	
+			<div class="contacts">
+				<div class="title">
+					<p class="title-line"></p>
+					<h2>Contacts</h2>
+					<p class="title-line"></p>
+				</div>
 
-				<div class="container-vit-2">
-						<div class="vit-4">
-								<img src="image\camera.jpg">
-								<div class="ploy-4">
-									<h1>Lorem ipsum</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum inventore, ipsa vero perferendis itaque fugiat dolorem natus incidunt quasi quaerat.</p>
-								</div>
-							</div>
+				<div class="contacts-wrap">
+					<div class="contacts-wrap-item">
+						<i class="fas fa-map-marker-alt"></i>
+						<h2>Location:</h2>
+						<span>Kharkiv, Ukraine</span>
+					</div>
 
-							<div class="vit-5">
-								<img src="image\guitar.jpg">
-								<div class="ploy-5">
-									<h1>Lorem ipsum</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum inventore, ipsa vero perferendis itaque fugiat dolorem natus incidunt quasi quaerat.</p>
-								</div>
-							</div>
+					<div class="contacts-wrap-item">
+						<i class="fas fa-phone"></i>
+						<h2>Phone:</h2>
+						<span>+380 (68) 541 16-62</span>
+					</div>
 
-							<div class="vit-6">
-								<img src="image\lamp.jpg">
-								<div class="ploy-6">
-									<h1>Lorem ipsum</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum inventore, ipsa vero perferendis itaque fugiat dolorem natus incidunt quasi quaerat.</p>
-								</div>		
+					<div class="contacts-wrap-item">
+						<i class="far fa-envelope"></i>
+						<h2>Email:</h2>
+						<span>alexkos971@gmail.com</span>
+					</div>
+
+					<div class="contacts-wrap-item">
+						<i class="fas fa-user-plus"></i>
+						<h2>Social media</h2>
+
+						<div class="contacts-wrap-item-icons">
+							<a href="https://t.me/alex_kos971">
+								<i class="fab fa-telegram"></i>
+							</a>
+
+							<a href="https://www.instagram.com/alex_kos971/?hl=ru">
+								<i class="fab fa-instagram"></i>
+							</a>
+
+							<a href="https://www.facebook.com/profile.php?id=100017170094772">
+								<i class="fab fa-facebook"></i>
+							</a>
 						</div>
-					</div>		
-
+					</div>
+				</div>
+			</div>
 		</content>
 
 	
 
 		<footer>
-			<div class="copyright">
+			<!-- <div class="copyright"> -->
 				<h3>©All rights reserved. Look this on repo <a href="https://github.com/alexkos971/portfolio"><span>Alex Kos</span></a></h3>
-			</div>	
+			<!-- </div>	 -->
 		</footer>
 
 	<script src="js\jquery-3.3.1.min.js"></script>

@@ -23,9 +23,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .title {
 	width: 21%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 35px;
+  display: block;
+  white-space: nowrap;
+  margin: 0 auto;
+  padding-top: 35px;
 }
 
 
@@ -139,8 +140,6 @@ content {
 	display: block;
 }
 
-
-
 .about {
 	display: flex;
     justify-content: space-between;
@@ -196,10 +195,10 @@ content {
 
 .about-wrap img {
 	position: absolute;
-    height: 110%;
-    top: -4%;
-    width: auto;
-    -webkit-filter: brightness(.9);
+  height: 110%;
+  top: -4%;
+  width: auto;
+  -webkit-filter: brightness(.9);
 }
 
 .about-skills {
@@ -442,229 +441,174 @@ nav h1 {
 
 .works {
 	width: 100%;
-	height: auto;
 	overflow: hidden;
-	position: relative;
 	background-color: #5995b7;
 	position: relative;
 }
 
-
-/*text-align: center;
-	color: #303030;
-	position: relative;
-	top: 25px;
-	font-size: 40px;
-	font-family: 'Futura No 2 Book DEE';
-	letter-spacing: 1px;*/
-
-
-.container-vit, .container-vit-2 {
+.works-container {
 	width: 100%;
-	height: auto;
-	margin: 0 auto;
-	display: flex;
-	position: relative;
-	justify-content: center;
-	align-self: center;
-	align-content: center;
-	align-items: center;
-	top: 50px;
-	text-align: center;
-	margin-bottom: -10px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 50px auto;
+  cursor: pointer;
 }
 
-.ploy, .ploy-2, .ploy-3 {
+.works-container-item {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	margin: 0px 10px;
+	background-color: #d80f4d;	
+}
+
+.works-container-item img {
+	  width: auto;
+    height: 110%;
+    position: relative;
+    left: -45px;
+    margin: 0 auto;
+    transition: .3s all;
+}
+
+/*.works-container-item:nth-child(2) img {
+	left: -100px;
+}
+*/
+.works-container-item-text {
 	width: 84%;
 	height: 84%;
-	position: relative;
 	display: none;
-	top: -101.6%;
-	right: -8%;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 	border: 1px solid;
-	transition: ploy .2s ease;
 	z-index: 4;
 }
 
 
-.ploy-4, .ploy-5, .ploy-6 {
-	width: 84%;
-	height: 84%;
-	position: relative;
-	display: none;
-	top: -101.6%;
-	right: -8%;
-	border: 1px solid;
-	transition: ploy .2s ease;
-	z-index: 4;
+.works-container-item-text h1 {
+	color: #fff;
+  font-family: 'Poiret One';
+  margin-top: 20px;
 }
 
-.container-vit h1, .container-vit-2 h1 {
+.works-container-item-text p {
 	color: #fff;
-	font-family: sans-serif;
-}
-
-.container-vit p, .container-vit-2 p {
-	color: #fff;
-	font-family: sans-serif;
+	font-family: 'Manrope', sans-serif;
 	font-size: 17px;
-	font-weight: normal;
 	position: relative;
-	top: 20px;
 }
 
-.vit, .vit-3, .vit-4, .vit-6 {
-	width: 300px;
-	height: 300px;
-	overflow: hidden;
-	background-color: #d80f4d;	
+.works-container-item-text a {
+	font-family: 'Poiret One';
+  top: 20px;
+  position: relative;
 }
 
-.vit-2, .vit-5 {
-	width: 300px;
-	height: 300px;
-	overflow: hidden;
-	background-color: #d80f4d;	
+
+
+.works-container-item:hover .works-container-item-text {
+	display: block;
 }
 
-.container-vit-2 {
-	width: 100%;
-	height: auto;
-	margin: 0 auto;
-	display: flex;
-	position: relative;
-	justify-content: center;
+.works-container-item:hover  img{
+	-webkit-opacity: .3;/*.7*/
+	left: -15px;
+}
+
+.contacts {
+	background: #fff;
+  display: block;
+}
+
+.contacts-wrap {
+	 display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 80%;
+   padding: 83px 0px;
+   margin: 0 auto;
+   position: relative;
+}
+
+.contacts-wrap-item {
+	width: 19%;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+	box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
 	text-align: center;
-	margin-bottom: 100px;
+  padding: 20px;
+  transition: .2s all;
+  cursor: pointer;
 }
 
-.container-vit-2 img {
-	width: 390px;
-	height: 300px;
+.contacts-wrap-item:hover {
+	width: 23%;
+}
+
+.contacts-wrap-item i {
+	color: #D54C4C;
+  font-size: 25px;
+}
+
+.contacts-wrap-item h2 {
+	font-size: 18px;
+	font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-family: 'Manrope', sans-serif;
+}
+
+.contacts-wrap-item span {
 	position: relative;
-	left: -45px;
-	margin: 0 auto;
-	margin-bottom: 20px;
-	transition: .3s all;
+  padding-top: 59px;
+  font-size: 17px;
+  font-family: 'Poiret One';
 }
 
-
-
-.vit img {
-	width: 390px;
-	height: 300px;
-	position: relative;
-	left: -45px;
-	margin: 0 auto;
-	margin-bottom: 20px;
-	transition: .3s all;
+.contacts-wrap-item-icons {
+	display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 55%;
 }
-
-.vit-2 img {
-	width: 390px;
-	height: 300px;
-	margin: 0 auto;
-	position: relative;
-	left: -90px;
-	margin-bottom: 20px;
-	transition: .3s all;
-}
-
-.vit-3 img {
-	width: 390px;
-	height: 300px;
-	position: relative;
-	left: -60px;
-	margin: 0 auto;
-	margin-bottom: 20px;
-	transition: .3s all;
-}
-
-.vit-6 img {
-	position: relative;
-	left: -70px;
-}
-
-
-.vit:hover .ploy {
-	display: block;
-}
-
-.vit-2:hover .ploy-2 {
-	display: block;
-}
-
-.vit-3:hover .ploy-3 {
-	display: block;
-}
-
-.vit-4:hover .ploy-4 {
-	display: block;
-}
-
-.vit-5:hover .ploy-5 {
-	display: block;
-}
-
-.vit-6:hover .ploy-6 {
-	display: block;
-}
-
-	.vit:hover  img{
-		-webkit-opacity: .3;/*.7*/
-		left: -15px;
-	}
-
-		.vit-2:hover  img{
-			-webkit-opacity: .3;
-			left: -50px;
-		}
-
-			.vit-3:hover  img{
-				-webkit-opacity: .3;
-				left: -10px;
-			}
-				.vit-4:hover  img{
-					-webkit-opacity: .3;
-					left: -10px;
-				}
-					.vit-5:hover  img{
-						-webkit-opacity: .3;
-						left: -10px;
-					}
-						.vit-6:hover  img{
-							-webkit-opacity: .3;
-							left: -30px;
-						}
 
 footer {
 	width: 100%;
 	height: 80px;
 	background-color: #212121;
 	position: relative;
-	/*bottom: -100px;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Poiret One', sans-serif;
 }
 
 .copyright {
 	position: relative;
-	margin-top: -20px;
+	/*margin-top: -20px;*/
 }
 
 footer h3 {
 	text-align: center;
 	color: #fff;
 	font-family: sans-serif;
-	font-size: 18px;
+	font-size: 15px;
 	word-spacing: 2px;
 	letter-spacing: 1px;
 	position: relative;
-	top: 20px;
+	/*top: 20px;*/
 	font-weight: normal;
 }
 
 footer span {
-	font-family: Roboto slab, sans;
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: normal;
 	color: #1a4fa3;
 }
