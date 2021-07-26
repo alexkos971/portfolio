@@ -21,10 +21,18 @@ jQuery(document).ready(function() {
   let percentFlag = true;
 
 $('#check-menu').on('click', function() {
+  $('.present').toggleClass("hidden");
+  $('.arrow').toggleClass('hidden');
   $('.head-menu').toggleClass('head-menu-active');
   $('.main-menu').slideRight(1000);
     //$('.head').css("background-color", "#000")
 });
+
+  
+$('.head-menu > li').on('click', () => {
+  $('.head-menu').removeClass('head-menu-active');
+  $('#check-menu').prop('checked', false);
+})
 
 $("#toHome").on('click', function() {
   $(".head").removeClass("head-r");
@@ -89,8 +97,11 @@ $(window).on("scroll", function () {
 
 //preloader
 setTimeout(function() {
+  // window.pageYOffset = 0;
   document.getElementById("preloader").style.display = "none";
   document.body.style.overflowY = 'scroll';
+  // console.log(window.pageYOffset)
+  // document.body.offsetY = '0px';
 }, 2500);  
 
 

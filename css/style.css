@@ -5,7 +5,7 @@ body {
 	padding: 0;
 	justify-content: center;
 	overflow-x: hidden;
-	/*overflow-y: hidden;*/
+	overflow-y: hidden;
 	/*display: none;*/ /*для пароля*/
 }
 
@@ -61,11 +61,16 @@ header {
 
 .present {
 	position: absolute;
+	display: block;
 	top: 35%;
 	left: 50%;
 	transform: translate(-50%);
 	text-align: center;
-	/*white-space: nowrap;*/
+	white-space: nowrap !important;
+}
+
+.hidden {
+	display: none;
 }
 
 
@@ -576,7 +581,9 @@ nav h1 {
 	display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 55%;
+  width: 48%;
+  position: relative;
+  top: 6px;
 }
 
 footer {
