@@ -1,6 +1,6 @@
 jQuery(document).ready(function() {
   var typed = new Typed("#words", {
-    strings: ["", "Web Developer", "Designer", "Front - End", "JS", "ReactJS"],
+    strings: ["", "Web Developer", "Node JS", "Front - End", "JS", "ReactJS"],
     typeSpeed: 100,
     backSpeed: 40,
     loop: true
